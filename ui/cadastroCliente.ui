@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1038</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+	color: #000;
+	border: none;
+	
+	font: 13pt &quot;MS Shell Dlg 2&quot;;
+}
+#centralwidget{
+	background-color: #eff9fe;
+
+}
+ #frame_11{
+	background-color: #2596be;
+}
+QLineEdit{
+	border-color: black;
+	color: #2596be;
+}
+#searchFrame{
+	border-radius: 10px;
+	border: 2px solid #2596be;
+}
+#appHeader{
+	color: #2596be;
+}
+#card1, #card2, #card3, #card4 {
+	background-color: #fefeff;
+	border-radius: 20px;
+}
+#btnCancelar, #btnCadastrar, #btnReset{
+	background-color: #2596be;
+	border-radius: 10px;
+}
+#widget_4, #widget_5, #profileCont, #frame_15{
+	background-color: #fefeff;
+	border-radius: 20px;
+}
+#headerFrame{
+	background-color: #fefeff;
+}
+
+QPushButton{
+	padding: 10px 5px;
+	text-align: center;
+}
+#centralwidget{
+	
+	background-color: rgb(0, 255, 255);
+}
+#line{
+	
+	background-color: rgb(0, 0, 0);
+}
+</string>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1041</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 255, 0);
+background-color: rgba(86,109,124,255);</string>
+    </property>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>971</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>971</width>
+       <height>541</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>971</width>
+       <height>541</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(207,222,229,255);</string>
+     </property>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>260</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #000;</string>
+      </property>
+      <property name="text">
+       <string>Telefone/Watss:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>90</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #000;</string>
+      </property>
+      <property name="text">
+       <string>Sobrenome:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>170</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #000;</string>
+      </property>
+      <property name="text">
+       <string>Pet:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #000;</string>
+      </property>
+      <property name="text">
+       <string>Nome:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>170</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #000;</string>
+      </property>
+      <property name="text">
+       <string>CPF:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inpuNome">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>130</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width:2px;
+background-color: rgb(170, 255, 255);
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>30</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>22</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #000;
+font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Tela de Cadastro</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputWats">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>300</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width:2px;
+background-color: rgb(170, 255, 255);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inpuCpf">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>210</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width:2px;
+background-color: rgb(170, 255, 255);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputPet">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>210</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width:2px;
+background-color: rgb(170, 255, 255);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputEmail">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>300</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width:2px;
+background-color: rgb(170, 255, 255);
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inpuSobrenome">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>130</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width:2px;
+background-color: rgb(170, 255, 255);
+</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>350</y>
+        <width>811</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="inputNumero">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>40</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width:2px;
+background-color: rgb(170, 255, 255);
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>0</y>
+         <width>81</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #000;</string>
+       </property>
+       <property name="text">
+        <string>Endereço:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>0</y>
+         <width>61</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #000;</string>
+       </property>
+       <property name="text">
+        <string>UF:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb_uf">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>13</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width:2px;
+background-color: rgb(170, 255, 255);
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Usuário</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Administrador</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLineEdit" name="inpuEndereco">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>40</y>
+         <width>341</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width:2px;
+background-color: rgb(170, 255, 255);
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>10</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #000;</string>
+       </property>
+       <property name="text">
+        <string>Numero:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>270</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #000;</string>
+      </property>
+      <property name="text">
+       <string>Email</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>610</y>
+       <width>811</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="btnReset">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+border-width:2px;
+border-style:outset;
+border-color:black;
+background-color: rgb(85, 170, 255);
+color: #000;</string>
+      </property>
+      <property name="text">
+       <string>resetar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnCadastrar">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>0</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+border-width:2px;
+border-style:outset;
+border-color:black;
+color: #000;
+background-color: rgb(85, 255, 127);</string>
+      </property>
+      <property name="text">
+       <string>Cadastar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnCancelar">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>0</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+border-width:2px;
+border-style:outset;
+border-color:black;
+background-color: red;
+color: #000;</string>
+      </property>
+      <property name="text">
+       <string>cancelar</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

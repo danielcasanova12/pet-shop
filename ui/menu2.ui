@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1302</width>
+    <height>841</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+	color: #000;
+	border: none;
+}
+#centralwidget{
+	background-color: #eff9fe;
+
+}
+ #frame_11{
+	background-color: #2596be;
+}
+QLineEdit{
+	background: transparent;
+	color: #2596be;
+}
+#searchFrame{
+	border-radius: 10px;
+	border: 2px solid #2596be;
+}
+#appHeader{
+	color: #2596be;
+}
+#card1, #card2, #card3, #card4 {
+	background-color: #fefeff;
+	border-radius: 20px;
+}
+#btnDeleteClientes, #btnGerarExelClientes, #btnInserirClientes, #btnLimparClientes, #tabelaClientes, #btnPesquisarClientes, #inputPesquisaClientes, #inputPesquisaServicos, #tabelaServico, #btnGerarExelServicos, #btnInserirServicos, #btnLimparServicos, #btnEditarServicos, #btnPesquisarServicos, #inputPesquisa, #tabelaServicos, #btnTodosServicos, #btnDeleteServicos, #btnEditarClientes, #btnTodosClientes{
+	background-color: #2596be;
+	color: #fff;
+	border-radius: 10px;
+	text-align: center;
+}
+#widget_4, #widget_5, #profileCont, #frame_15{
+	background-color: #fefeff;
+	border-radius: 20px;
+}
+#headerFrame{
+	background-color: #fefeff;
+}
+
+QPushButton{
+	padding: 10px 5px;
+	text-align: left;
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1301</width>
+         <height>831</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 19pt &quot;MS Sans Serif&quot;;</string>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Menu</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Clientes</string>
+        </attribute>
+        <widget class="QTableWidget" name="tabelaClientes">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>1251</width>
+           <height>521</height>
+          </rect>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>30</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Id</string>
+          </property>
+          <property name="textAlignment">
+           <set>AlignLeading|AlignVCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Email</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Senha</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QFrame" name="frame_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>690</y>
+           <width>1211</width>
+           <height>66</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="btnDeleteClientes">
+            <property name="text">
+             <string>Deletar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnGerarExelClientes">
+            <property name="text">
+             <string>Gerar xml</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnInserirClientes">
+            <property name="text">
+             <string>Inserir</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLimparClientes">
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnEditarClientes">
+            <property name="text">
+             <string>Editar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QPushButton" name="btnPesquisarClientes">
+         <property name="geometry">
+          <rect>
+           <x>920</x>
+           <y>600</y>
+           <width>161</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Pesquisar</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="inputPesquisaClientes">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>600</y>
+           <width>691</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(173, 173, 173);
+border-color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnTodosClientes">
+         <property name="geometry">
+          <rect>
+           <x>1100</x>
+           <y>600</y>
+           <width>161</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Todos</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Servicos</string>
+        </attribute>
+        <widget class="QLineEdit" name="inputPesquisaServicos">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>600</y>
+           <width>691</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(173, 173, 173);
+border-color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+         </property>
+        </widget>
+        <widget class="QFrame" name="frame_3">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>690</y>
+           <width>1211</width>
+           <height>66</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="btnDeleteServicos">
+            <property name="text">
+             <string>Deletar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnGerarExelServicos">
+            <property name="text">
+             <string>Gerar xml</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnInserirServicos">
+            <property name="text">
+             <string>Inserir</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLimparServicos">
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnEditarServicos">
+            <property name="text">
+             <string>Editar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QPushButton" name="btnPesquisarServicos">
+         <property name="geometry">
+          <rect>
+           <x>940</x>
+           <y>600</y>
+           <width>161</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Pesquisar</string>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="tabelaServicos">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>1251</width>
+           <height>521</height>
+          </rect>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::CustomContextMenu</enum>
+         </property>
+         <property name="showGrid">
+          <bool>true</bool>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderHighlightSections">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Id</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>nome</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>tipodopet</string>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Wats</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Email</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QPushButton" name="btnTodosServicos">
+         <property name="geometry">
+          <rect>
+           <x>1120</x>
+           <y>600</y>
+           <width>161</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Todos</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>Despesas</string>
+        </attribute>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
